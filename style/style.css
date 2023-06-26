@@ -1,7 +1,40 @@
+*{
+   margin: 0;
+   padding: 0;
+}
 .background-colour{
    background-color: rgba(251, 172, 1, 0.665); 
    
 }
-.sprite-image{
-     margin-top: -50px;
+.image-parent{
+   
+}
+.sprite{
+   position: relative;
+   left: 100px;
+   
+}
+.orange{
+   position: absolute;
+}
+.mini-sprite{
+   background-color: rgb(0,158,90);
+   height: 125px;
+}
+.mini-sprite img{
+   margin-top: -15px;
+}
+.mini-lipton{
+   background-color: rgb(255,193,193);
+   height: 125px;
+}
+.mini-lipton img{
+   margin-top: -15px;
+}
+.mini-fanta{
+   background-color: rgb(247,124,21);
+   height: 125px;
+}
+.mini-fanta img{
+   margin-top: -20px;
 }

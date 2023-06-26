@@ -5,9 +5,10 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <script src="https://cdn.tailwindcss.com"></script>
      <link rel="stylesheet" href="style/style.css">
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
      <title>Drinks</title>
 </head>
-<body class="background-colour">
+<body id="change-colour" class="background-colour">
 
 <section class="">
 <header>
@@ -43,25 +44,51 @@
 <div class="flex mt-32">
 
 <div class="ms-10 text-white">
-<h1 class=" font-bold text-3xl">S P R I T E</h1>
+<h1 id="lipton-text" class=" font-bold text-3xl">S P R I T E</h1>
 <p class="mt-5 text-sm">Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. Autem, similique harum ex <br>vero debitis consequatur repellendus labore sit quod <br>veritatis quae illo, provident cumque numquam rerum,<br> excepturi voluptatum dolores voluptatibus.</p>
-<h1 class="mt-5 font-medium">VIEW FLAVOUR</h1>
+<h1  class="mt-5 font-medium">VIEW FLAVOUR</h1>
+<div class="grid grid-cols-3 gap-2 mt-10">
+  <div class="mini-sprite transition ease-in-out delay-150 bg-lime-400 hover:-translate-y-1 hover:scale-110 hover:bg-lime-400 duration-150 ">
+    <img class="w-10 ms-8 " src="Image/sprite.png" alt="">
+    <h1 class="text-center mt-2 font-bold" >SPRITE</h1>
+  </div>
+  <div id="change-lipton" class="mini-lipton transition ease-in-out delay-150 bg-pink-300 hover:-translate-y-1 hover:scale-110 hover:bg-pink-300 duration-150">
+    <img class="w-10 ms-8 " src="Image/lipton.png" alt="">
+    <h1 class="text-center mt-2 font-bold" >LIPTON</h1>
+  </div>
+  <div class="mini-fanta transition ease-in-out delay-150 bg-amber-500 hover:-translate-y-1 hover:scale-110 hover:bg-amber-500 duration-150">
+    <img class="w-16 h-20 ms-5 " src="Image/Daco_5378458 (1).png" alt="">
+    <h1 class="text-center mt-2 font-bold" >FANTA</h1>
+  </div>
+</div>
 
 </div>
           
-<div class="ms-32 ">
-          
-<img class="w-96 sprite-image" src="Image/sprite2.png" alt="">
-<img id="lipton" src="" alt="">
-<img src="" alt="">
-          
+<div class="ms-32 image-parent">
+<div class="orange ">
+  <img id="apple" class="w-96" src="Image/pngegg (1).png" alt="">
+  <img  src="" alt="">
+</div>          
+<div  class="sprite">
+  
+  <img id="lipton" class="w-48" src="Image/sprite.png" alt="">
+  <img   class="w-48"alt="">
+</div>
+
+
 </div>
 </div>
           
 </main>
 </section>
 
-
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 500,
+    });
+  </script>
 <script src="javaScript/Apple.js"></script>
+<script src="javaScript/sprite.js"></script>
 </body>
 </html>
