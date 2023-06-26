@@ -13,25 +13,25 @@
 <section class="">
 <header>
           <!--------- Nav Bar start------ -->
-<nav class="">
+<nav class="text-white text-center">
 <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                  
 <div class="">
-                   <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 rounded-lg  md:flex-row md:space-x-8 md:mt-0 ">
+                   <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 rounded-lg  md:flex-row md:space-x-8 md:mt-0 text-center">
                      <li>
                        <a href="#" class="" aria-current="page">Home</a>
                      </li>
                      <li>
-                       <a href="#" class="">About</a>
+                       <a href="#" class="">Our Drinks</a>
                      </li>
                      <li>
-                       <a href="#" class="">Services</a>
+                       <a href="#" class="">Our News</a>
                      </li>
                      <li>
                        <a href="#" class="">Pricing</a>
                      </li>
                      <li>
-                       <a href="#" class="">Contact</a>
+                       <a href="#" class="">BUY</a>
                      </li>
                    </ul>
                  </div>
@@ -41,37 +41,44 @@
 </header>     
                 
 <main>
-<div class="flex mt-32">
+<div class="flex mt-20">
 
 <div class="ms-10 text-white">
 <h1 id="lipton-text" class=" font-bold text-3xl">S P R I T E</h1>
 <p class="mt-5 text-sm">Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. Autem, similique harum ex <br>vero debitis consequatur repellendus labore sit quod <br>veritatis quae illo, provident cumque numquam rerum,<br> excepturi voluptatum dolores voluptatibus.</p>
 <h1  class="mt-5 font-medium">VIEW FLAVOUR</h1>
 <div class="grid grid-cols-3 gap-2 mt-10">
-  <div id="change-sprite" class="mini-sprite transition ease-in-out delay-150 bg-lime-400 hover:-translate-y-1 hover:scale-110 hover:bg-lime-400 duration-150  ">
+  
+  <div onclick="changeSprite()" id="change-sprite" class="mini-sprite transition ease-in-out delay-150 bg-lime-400 hover:-translate-y-1 hover:scale-110 hover:bg-lime-400 duration-150  ">
     <img class="w-10 ms-8 " src="Image/sprite.png" alt="">
     <h1 class="text-center mt-2 font-bold" >SPRITE</h1>
   </div>
-  <div id="change-lipton" class="mini-lipton transition ease-in-out delay-150 bg-pink-300 hover:-translate-y-1 hover:scale-110 hover:bg-pink-300 duration-150">
+ 
+  <div onclick="changeLipton()"  id="change-lipton" class="mini-lipton transition ease-in-out delay-150 bg-pink-300 hover:-translate-y-1 hover:scale-110 hover:bg-pink-300 duration-150">
     <img class="w-10 ms-8 " src="Image/lipton.png" alt="">
     <h1 class="text-center mt-2 font-bold" >LIPTON</h1>
   </div>
-  <div id="change-fanta"  class="mini-fanta transition ease-in-out delay-150 bg-amber-500 hover:-translate-y-1 hover:scale-110 hover:bg-amber-500 duration-150">
-    <img class="w-16 h-20 ms-5 " src="Image/Daco_5378458 (1).png" alt="">
+ 
+  <div onclick="changeFanta()" id="change-fanta"  class="mini-fanta transition ease-in-out delay-150 bg-amber-500 hover:-translate-y-1 hover:scale-110 hover:bg-amber-500 duration-150">
+    <img class="w-16 h-20 ms-5 " src="Image/fanta3.png" alt="">
     <h1 class="text-center mt-2 font-bold" >FANTA</h1>
   </div>
 </div>
 
 </div>
           
-<div class="ms-32 image-parent ">
-<div  class="orange ">
-  <img  id="apple" class="w-96 orange-img " src="Image/pngegg (1).png" alt="">
-  <img id="" src="" alt="">
-</div>          
-<div class="sprite ">
+<div class="ms-32 image-parent">
+<div  class="background-image">
+  <img  id="orange" data-aos="zoom-out"  class="orange-png" src="Image/orange2.png" alt="">
+  <img  data-aos="zoom-out"  class="orange-png" src="" alt="">
+
   
-  <img id="lipton"  class="sprite-img w-48 fanta-img" src="Image/sprite.png" alt="" >
+</div>          
+<div class="images">
+  
+  <img id="sprite-image" data-aos="zoom-out" class="" src="Image/sprite.png" alt="" >
+  
+  
  
 </div>
 
@@ -91,5 +98,12 @@
 <script src="javaScript/Apple.js"></script>
 <script src="javaScript/sprite.js"></script>
 <script src="javaScript/fanta.js"></script>
+<script src="javaScript/liptonbgChange.js"></script>
+
+
+
+
+
+</script>
 </body>
 </html>

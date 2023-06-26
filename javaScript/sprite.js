@@ -1,14 +1,20 @@
-document.getElementById('change-sprite').addEventListener('click',function(){
-     var spriteImage = document.querySelector('.sprite-img');
-     spriteImage.src = 'Image/sprite.png';
-     spriteImage.style.width = '192px'
-     var orangeImage = document.querySelector('.orange-img');
-     orangeImage.src = 'Image/pngegg (1).png';
-    document.getElementById('change-colour').style.backgroundColor = 'rgb(247,231,135)';
-    document.getElementById('lipton-text').innerText ='S P R I T E'
-  
+function changeSprite(){
+    let displaySpriteImage = document.getElementById('sprite-image');
+    let displayOrangeImage = document.getElementById('orange');
+    let changeSpriteColour = document.getElementById('change-colour');
     
-     
-           
-     
-});
+    if(displaySpriteImage.src.match('Image/sprite.png'), displayOrangeImage.src.match('Image/orange2.png'), changeSpriteColour.style.backgroundColor = 'rgb(73,194,135)'){
+        
+         displaySpriteImage.src = 'Image/sprite.png'
+         displayOrangeImage.src = 'Image/orange2.png'
+         changeSpriteColour.style.backgroundColor = 'rgb(73,194,135)'
+         
+
+    }
+    else{
+        displaySpriteImage.src ='Image/sprite.png';
+        displayOrangeImage.src ='Image/orange2.png';
+        changeSpriteColour.style.backgroundColor = 'rgb(73,194,135)'
+    }
+}
+

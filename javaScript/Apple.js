@@ -1,19 +1,26 @@
- document.getElementById('change-lipton').addEventListener('click',function(){
-var image = document.querySelector('#lipton');
-image.src = 'Image/lipton.png';
-var appleImage = document.querySelector('#apple');
-appleImage.src = 'Image/apple.png';
-appleImage.style.width = '550px'
-appleImage.style.marginTop = '-110px'
-appleImage.style.marginLeft = '-50px'
+function changeLipton(){
+     let displayLiptonImage = document.getElementById('sprite-image');
+     let displayAppleImage = document.getElementById('orange');
+     let changeLiptonColour = document.getElementById('change-colour');
+     
 
-document.getElementById('change-colour').style.backgroundColor ='rgb(234,115,115)';
-document.getElementById('lipton-text').innerText = 'L I P T O N';
-      
+     
+     if(displayLiptonImage.src.match('Image/sprite.png'), displayAppleImage.src.match('Image/orange.png'), changeLiptonColour.style.backgroundColor = 'rgb(234,115,115)'){
+          displayLiptonImage.src = 'Image/lipton.png'
+          displayAppleImage.src = 'Image/apple.png'
+          changeLiptonColour.style.backgroundColor = 'rgb(234,115,115)'
+          
 
- });
+     }else{
+          displayLiptonImage.src ='Image/lipton.png';
+          displayAppleImage.src ='Image/apple.png';
+          changeLiptonColour.style.backgroundColor = 'rgb(234,115,115)'
+     }
 
-// document.getElementById('change-lipton').addEventListener('click',function(){
-//       var appleImage = document.querySelector('#apple');
-//       appleImage.src = 'Image/pngegg (2)';
-// })
+     
+    
+     
+     
+
+};
+
