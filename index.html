@@ -8,7 +8,7 @@
      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
      <title>Drinks</title>
 </head>
-<body id="change-colour" class="background-colour">
+<body id="change-colour" class="background-colour sprite-background">
 
 <section class="">
 <header>
@@ -48,7 +48,7 @@
 <p class="mt-5 text-sm">Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. Autem, similique harum ex <br>vero debitis consequatur repellendus labore sit quod <br>veritatis quae illo, provident cumque numquam rerum,<br> excepturi voluptatum dolores voluptatibus.</p>
 <h1  class="mt-5 font-medium">VIEW FLAVOUR</h1>
 <div class="grid grid-cols-3 gap-2 mt-10">
-  <div class="mini-sprite transition ease-in-out delay-150 bg-lime-400 hover:-translate-y-1 hover:scale-110 hover:bg-lime-400 duration-150 ">
+  <div id="change-sprite" class="mini-sprite transition ease-in-out delay-150 bg-lime-400 hover:-translate-y-1 hover:scale-110 hover:bg-lime-400 duration-150  ">
     <img class="w-10 ms-8 " src="Image/sprite.png" alt="">
     <h1 class="text-center mt-2 font-bold" >SPRITE</h1>
   </div>
@@ -64,15 +64,15 @@
 
 </div>
           
-<div class="ms-32 image-parent">
+<div class="ms-32 image-parent ">
 <div class="orange ">
-  <img id="apple" class="w-96" src="Image/pngegg (1).png" alt="">
+  <img id="apple" class="w-96 orange-img" src="Image/pngegg (1).png" alt="">
   <img  src="" alt="">
 </div>          
-<div  class="sprite">
+<div class="sprite ">
   
-  <img id="lipton" class="w-48" src="Image/sprite.png" alt="">
-  <img   class="w-48"alt="">
+  <img id="lipton"  class="sprite-img w-48" src="Image/sprite.png" alt="" >
+ 
 </div>
 
 
@@ -90,5 +90,6 @@
   </script>
 <script src="javaScript/Apple.js"></script>
 <script src="javaScript/sprite.js"></script>
+<script src="javaScript/fanta.js"></script>
 </body>
 </html>
